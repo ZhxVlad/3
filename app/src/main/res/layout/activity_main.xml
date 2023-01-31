@@ -48,9 +48,4 @@
         app:layout_constraintBottom_toBottomOf="@+id/Toggle"
         app:layout_constraintStart_toEndOf="@+id/Toggle" />
 
-    <WebView
-        android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
