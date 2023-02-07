@@ -3,7 +3,6 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,9 +12,6 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.telephony.TelephonyManager;
 import android.view.View;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.CompoundButton;
@@ -44,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
         String save_URL = loadURL();
         if (save_URL != null){
             if (isNetworkConnected()){
-                TextView textView = findViewById(R.id.textView);
-                textView.setText("Для работы приложения необходим доступ к сети");
+                System.out.println("Для работы приложения необходим доступ к сети");
             }else {
                 // ???
                 MainActivity2 mainActivity2 = new MainActivity2(save_URL);
@@ -130,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String loadURL(){
         sPref = getPreferences(MODE_PRIVATE);
-        String url = sPref.getString("url","");
+        String url = sPref.getString("url",null);
         return url;
     }
 
@@ -140,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean checks(MainActivity mainActivity){
-        return isSimSupport(mainActivity) || isEmulator();
+        return isEmulator();
     }
 
     private boolean isSimSupport(Context context) {
