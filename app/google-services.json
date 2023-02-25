@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "487294322364",
-    "project_id": "my-application-32211",
-    "storage_bucket": "my-application-32211.appspot.com"
+    "project_number": "405732185014",
+    "project_id": "glepar-c7aaa",
+    "storage_bucket": "glepar-c7aaa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:487294322364:android:12b3facfb4e713c47a72b9",
+        "mobilesdk_app_id": "1:405732185014:android:c2f12f9669709911c46717",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "pari.bet.paribet.ssport"
         }
       },
       "oauth_client": [
         {
-          "client_id": "487294322364-g3sg50v9cdls5i4asc36vtba7n8vijes.apps.googleusercontent.com",
+          "client_id": "405732185014-rj5h5prhmtli1vq6gjelc6qd00gk4koj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4ANxEkP2YmGjaOjyCBNOU-fy9HCzsRSA"
+          "current_key": "AIzaSyDYkYZ6n4LdQT6H5UFJSHM2JWFXfgI1sdY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "487294322364-g3sg50v9cdls5i4asc36vtba7n8vijes.apps.googleusercontent.com",
+              "client_id": "405732185014-rj5h5prhmtli1vq6gjelc6qd00gk4koj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -2,36 +2,31 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.TargetApi;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class MainActivity2 extends AppCompatActivity {
+public class WebView extends AppCompatActivity {
 
-    private WebView myWebView;
+    private android.webkit.WebView myWebView;
     private String URL;
 
-    public MainActivity2() {
+    public WebView() {
     }
 
-    public MainActivity2(String URL) {
+    public WebView(String URL) {
         this.URL = URL;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.webview);
         myWebView = findViewById(R.id.webview);
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.getSettings().setDomStorageEnabled(true);
         WebViewClient webViewClient = new WebViewClient() {
             @SuppressWarnings("deprecation") @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            public boolean shouldOverrideUrlLoading(android.webkit.WebView view, String url) {
                 return false;
             }
         };
@@ -47,6 +42,4 @@ public class MainActivity2 extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
-
 }
