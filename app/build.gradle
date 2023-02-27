@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myapplication'
-    compileSdk 32
+    namespace 'pari.bet.paribet.ssport'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.myapplication"
-        minSdk 24
-        targetSdk 32
+        applicationId "pari.bet.paribet.ssport"
+        minSdk 21
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -39,4 +39,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
 }

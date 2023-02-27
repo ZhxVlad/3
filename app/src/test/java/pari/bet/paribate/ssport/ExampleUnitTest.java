@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package pari.bet.paribate.ssport;
 
 import org.junit.Test;
 

@@ -1,7 +1,4 @@
-package com.example.myapplication;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package pari.bet.paribet.ssport;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +13,9 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
