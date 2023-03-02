@@ -11,7 +11,6 @@ public class Myapp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         OneSignal.initWithContext(this);
         OneSignal.setAppId(ONESIGNAL_APP_ID);
     }

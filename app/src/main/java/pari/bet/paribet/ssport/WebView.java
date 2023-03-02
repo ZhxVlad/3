@@ -20,8 +20,8 @@ public class WebView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.webview);
         myWebView = findViewById(R.id.webview);
+        setContentView(myWebView);
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.getSettings().setDomStorageEnabled(true);
         WebViewClient webViewClient = new WebViewClient() {
@@ -30,16 +30,14 @@ public class WebView extends AppCompatActivity {
                 return false;
             }
         };
+
         myWebView.setWebViewClient(webViewClient);
         myWebView.loadUrl(URL);
     }
 
     @Override
     public void onBackPressed() {
-        if (myWebView.canGoBack()) {
-            myWebView.goBack();
-        } else {
-            super.onBackPressed();
-        }
+        super.onBackPressed();
+        myWebView.goBack();
     }
 }

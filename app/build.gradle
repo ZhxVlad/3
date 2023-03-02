@@ -5,6 +5,10 @@ plugins {
 
 android {
     namespace 'pari.bet.paribet.ssport'
+    buildFeatures {
+        viewBinding = true;
+    }
+
     compileSdk 33
 
     defaultConfig {
